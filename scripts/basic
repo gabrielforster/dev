@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sudo apt upgrade -y && sudo apt update
