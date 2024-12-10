@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+sudo snap install spotify
+sudo snap install insominia
+sudo snap install postman
