@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/gabrielforster/dotfiles /tmp/dotfiles
+
+cp -r /tmp/dotfiles/tmux/.tmux.config ~/.tmux.conf
+cp -r /tmp/dotfiles/zsh/.zshrc ~/.zshrc
+cp -r /tmp/dotfiles/git/.gitconfig ~/.gitconfig
+cp -r /tmp/dotfiles/config/.config/*** ~/.config/
