@@ -2,4 +2,4 @@
 
 sudo apt -y upgrade && sudo apt -y update
 
-sudo apt -y install git curl vim fzf ripgrep pavucontrol xclip jq tldr flameshot python3-pip arandr snapd lxappearance feh compton rofi
+sudo apt -y install git curl vim fzf ripgrep git-delta pavucontrol xclip jq tldr flameshot python3-pip arandr snapd lxappearance feh compton rofi
