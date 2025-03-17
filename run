@@ -57,3 +57,16 @@ for script in $scripts; do
 
   execute $script
 done
+
+after_scripts=$(
+  find ./after -maxdepth 1 -mindepth 1 -executable -type f | sort
+)
+
+for after_script in $after_scripts; do
+  if echo "$after_script" | grep -qv "$filter"; then
+    log "filtering $after_script"
+    continue
+  fi
+
+  execute $after_script
+done
