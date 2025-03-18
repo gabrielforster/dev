@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# 
+#
 # TODO: check if it needs to run all `scripts` and `after`,
 # only `scripts`,
 # or only `after`;

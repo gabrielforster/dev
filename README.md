@@ -5,5 +5,4 @@ This is heavily ispired on the @theprimeagen course [Developer Productivity v2](
 
 
 ### TODO
- - [ ] Install browsers
- - [ ] Handle scripts on `after`, run them after `scripts` are done
+ - [ ] Come backend to the this working dir after scripts that `cd /tmp`
