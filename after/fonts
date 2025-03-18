@@ -1,0 +1,19 @@
+#/usr/bin/bash
+
+cd /tmp
+
+mkdir -p ~/.fonts
+
+# Ubuntu Mono
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/UbuntuMono.zip
+
+# Ubuntu
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Ubuntu.zip
+
+unzip UbuntuMono.zip -d UbuntuMono
+unzip Ubuntu.zip -d Ubuntu
+
+mv Ubuntu/**.ttf ~/.fonts
+mv UbuntuMono/**.ttf ~/.fonts
+
+fc-cache -fv
