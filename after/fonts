@@ -10,10 +10,20 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/UbuntuMono
 # Ubuntu
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Ubuntu.zip
 
+# FiraCode
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip
+
+# FiraMono
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraMono.zip
+
 unzip UbuntuMono.zip -d UbuntuMono
 unzip Ubuntu.zip -d Ubuntu
+unzip FiraMono.zip -d FiraMono
+unzip FiraCode.zip -d FiraCode
 
 mv Ubuntu/**.ttf ~/.fonts
 mv UbuntuMono/**.ttf ~/.fonts
+mv FiraCode/**.ttf ~/.fonts
+mv FiraMono/**.ttf ~/.fonts
 
 fc-cache -fv
