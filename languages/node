@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf install nodejs latest
-asdf install nodejs 20.12.0
-asdf install nodejs 16.20.0
-asdf install nodejs 14.18.0
+# asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+
+for version in "latest" "20.12.0" "16.20.0" "14.18.0" "22.13.0"; do
+  $(asdf install $version)
+done
 
 asdf set --home nodejs 20.12.0
