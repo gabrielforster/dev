@@ -16,14 +16,19 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.z
 # FiraMono
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraMono.zip
 
+# AdwaitaMono
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/AdwaitaMono.zip
+
 unzip UbuntuMono.zip -d UbuntuMono
 unzip Ubuntu.zip -d Ubuntu
 unzip FiraMono.zip -d FiraMono
 unzip FiraCode.zip -d FiraCode
+unzip AdwaitaMono.zip -d AdwaitaMono
 
 mv Ubuntu/**.ttf ~/.fonts
 mv UbuntuMono/**.ttf ~/.fonts
 mv FiraCode/**.ttf ~/.fonts
 mv FiraMono/**.ttf ~/.fonts
+mv AdwaitaMono/**.ttf ~/.fonts
 
 fc-cache -fv
