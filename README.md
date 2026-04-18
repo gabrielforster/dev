@@ -55,7 +55,3 @@ Run language installers manually after `asdf` is set up:
 ./languages/python
 ./languages/ruby
 ```
-
-### TODO
-
-- [ ] Come back to the working dir after scripts that `cd /tmp`
