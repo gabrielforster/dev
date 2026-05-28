@@ -8,4 +8,4 @@ mv go /usr/local
 rm -f go_folder.tar.gz
 
 # install asdf
-go install github.com/asdf-vm/asdf/cmd/asdf@v0.18.0
+go install github.com/asdf-vm/asdf/cmd/asdf@latest
