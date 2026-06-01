@@ -1,2 +1,2 @@
-#!/usr/env/bin bash
+#!/usr/bin/env bash
 sudo apt install zoxide -y
