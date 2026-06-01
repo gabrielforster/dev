@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # installs go first
-wget https://go.dev/dl/go1.25.5.linux-amd64.tar.gz -O go_folder.tar.gz
+curl https://dl.google.com/go/go1.25.10.linux-amd64.tar.gz --output go_folder.tar.gz
 rm -rf /usr/local/go
 tar -xzf go_folder.tar.gz
 mv go /usr/local
 rm -f go_folder.tar.gz
 
 # install asdf
-go install github.com/asdf-vm/asdf/cmd/asdf@latest
+/usr/local/go/bin/go install github.com/asdf-vm/asdf/cmd/asdf@latest
