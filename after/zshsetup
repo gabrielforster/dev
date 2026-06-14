@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+sudo apt install -y starship fd-find
+
+chsh -s $(which zsh)
+mkdir -p ~/.cache/zsh
+mkdir -p ~/.local/state/zsh
