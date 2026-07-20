@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+url="$(curl -fsSL https://api.github.com/repos/Kong/insomnia/releases/latest \
+     | jq -r '.assets[] | select(.name | test("Insomnia.Core-.*\\.deb$")) | .browser_download_url' \
+     | head -n1)"
+
+[[ -n "$url" ]] || { echo "Could not resolve Insomnia .deb URL" >&2; exit 1; }
+
+deb="$(mktemp --suffix=.deb)"
+wget -O "$deb" "$url"
+sudo apt install -y "$deb"
+rm -f "$deb"
