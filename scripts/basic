@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-sudo apt -y upgrade && sudo apt -y update
+sudo apt update -y && sudo apt upgrade -y
 
-sudo apt -y install git curl vim fzf fd-find bat ripgrep git-delta pavucontrol xclip jq tldr flameshot python3-pip arandr snapd lxappearance feh compton rofi
+sudo apt install git curl vim fzf fd-find bat ripgrep git-delta pavucontrol xclip jq tldr-py flameshot python3-pip arandr snapd lxappearance feh compton rofi -y
