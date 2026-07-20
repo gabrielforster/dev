@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+url="https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb"
+deb="$(mktemp --suffix=.deb)"
+wget -O "$deb" "$url"
+sudo apt install "$deb" -y
+rm -f "$deb"
