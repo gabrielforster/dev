@@ -20,8 +20,10 @@ asdf plugin add java https://github.com/halcyon/asdf-java.git
 for version in "openjdk-24" "openjdk-25" "openjdk-11" "openjdk-8"; do
   $(asdf install java $version)
 done
+asdf set --home java openjdk-25
 
 
 # install rust
 asdf plugin add rust https://github.com/code-lever/asdf-rust.git
 asdf install rust stable
+asdf set --home rust stable

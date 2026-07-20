@@ -3,3 +3,18 @@
 sudo apt update -y && sudo apt upgrade -y
 
 sudo apt install git curl vim fzf fd-find bat ripgrep git-delta pavucontrol xclip jq tldr-py flameshot python3-pip arandr snapd lxappearance feh compton rofi -y
+
+sudo apt install -y \
+  build-essential \
+  libffi-dev \
+  libyaml-dev \
+  zlib1g-dev \
+  libreadline-dev \
+  libgmp-dev \
+  libncurses5-dev \
+  libncursesw5-dev \
+  libdb-dev \
+  libgdbm-dev \
+  libgdbm-compat-dev \
+  liblzma-dev \
+  uuid-dev
