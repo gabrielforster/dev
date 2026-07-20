@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-
-# ASDF_RUBY_BUILD_VERSION=master asdf install ruby 3.4.8
-asdf install ruby 3.4.8
-
-asdf set --home ruby 3.4.8

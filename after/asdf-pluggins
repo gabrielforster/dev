@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# install node
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+for version in "latest" "20.12.0" "16.20.0" "14.18.0" "22.13.0" "24.16.0"; do
+  $(asdf install nodejs $version)
+done
+asdf set --home nodejs 24.16.0
+
+
+# install ruby
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+# ASDF_RUBY_BUILD_VERSION=master asdf install ruby 3.4.8
+asdf install ruby 3.4.8
+asdf set --home ruby 3.4.8
+
+
+# install java
+asdf plugin add java https://github.com/halcyon/asdf-java.git
+for version in "openjdk-24" "openjdk-25" "openjdk-11" "openjdk-8"; do
+  $(asdf install java $version)
+done
+
+
+# install rust
+asdf plugin add rust https://github.com/code-lever/asdf-rust.git
+asdf install rust stable
