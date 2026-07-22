@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+url="https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_linux_amd64.deb"
+deb="$(mktemp --suffix=.deb)"
+wget -O "$deb" "$url"
+sudo apt install "$deb" -y
+rm -f "$deb"
