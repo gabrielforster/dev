@@ -2,7 +2,28 @@
 
 sudo apt update -y && sudo apt upgrade -y
 
-sudo apt install git curl vim fzf fd-find bat ripgrep git-delta pavucontrol xclip jq tldr-py flameshot python3-pip arandr snapd lxappearance feh compton rofi -y
+sudo apt install -y \
+  git  \
+  curl  \
+  vim \
+  fzf \
+  fd-find \
+  bat \
+  ripgrep \
+  git-delta \
+  pavucontrol \
+  xclip \
+  jq \
+  tldr-py \
+  flameshot \
+  python3-pip \
+  arandr \
+  snapd \
+  lxappearance \
+  feh \
+  compton \
+  rofi \
+  network-manager-applet
 
 sudo apt install -y \
   build-essential \
