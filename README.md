@@ -21,14 +21,16 @@ Run everything:
 
 ### Parameters
 
-The `run` script accepts two optional arguments, in any order:
+The `run` script accepts these optional arguments, in any order:
 
-| Arg        | Effect                                                                 |
-|------------|------------------------------------------------------------------------|
-| `--dry`    | Dry run. Prints what would execute, prefixed with `[DRY_RUN]:`. No changes made. |
-| `<filter>` | Any other positional arg is treated as a filter. Only scripts whose path contains this substring are executed; the rest are skipped. |
+| Arg                    | Effect                                                                 |
+|------------------------|------------------------------------------------------------------------|
+| `--dry`                | Dry run. Prints what would execute, prefixed with `[DRY_RUN]:`. No changes made. |
+| `--filter <list>`      | Comma separated substrings. Only scripts whose path matches at least one are executed. |
+| `--filter-out <list>`  | Comma separated substrings. Scripts whose path matches any of them are skipped, even if `--filter` matched. |
+| `<filter>`             | Any other positional arg is treated as `--filter`. |
 
-Only one filter is honored — the last non-`--dry` arg wins.
+Both flags also accept `--filter=a,b` form. Only one value per flag is honored — the last one wins.
 
 ### Examples
 
@@ -39,11 +41,17 @@ Only one filter is honored — the last non-`--dry` arg wins.
 # Run only the docker script (from scripts/ and after/ combined)
 ./run docker
 
+# Run docker and neovim
+./run --filter docker,neovim
+
+# Run everything except cursor and spotify
+./run --filter-out cursor,spotify
+
+# Run everything from scripts/ but nothing from after/
+./run --filter-out after
+
 # Preview what running just the neovim setup would do
 ./run --dry neovim
-
-# Run only the 'after' hooks matching 'fonts'
-./run fonts
 ```
 
 ### Languages
